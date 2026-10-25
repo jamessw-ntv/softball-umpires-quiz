@@ -74,8 +74,10 @@ on the same dashboard.
    `'WBSC Softball Umpire Quiz · Oceania'`. Every result stores it in the `quiz`
    column, so the dashboard and CSV show which site each attempt came from.
 5. **Turn on Pages.** Repo → Settings → Pages → Build and deployment → Source:
-   **Deploy from a branch**, Branch: `main`, folder `/ (root)` → Save. The site is
-   live at `https://<owner>.github.io/<repo>/` within about a minute.
+   **GitHub Actions**. The included workflow (`.github/workflows/pages.yml`)
+   publishes on every push to `main`; to publish straight away, open the Actions
+   tab and re-run the latest "Deploy to GitHub Pages" run. The site is live at
+   `https://<owner>.github.io/<repo>/` about a minute later.
 6. **Test.** Open `…/take/`, run a Recorded Quiz, and check the "saved and sent"
    message, the email, and the dashboard at `…/admin/`.
 
